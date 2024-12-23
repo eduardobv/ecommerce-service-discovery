@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: ecommerce-service-discovery
+  config:
+    import: optional:configserver:http://localhost:8888
+
+server:
+  port: 8711
+
+eureka:
+  client:
+      registerWithEureka: false
+      fetchRegistry: false
